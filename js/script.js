@@ -1,7 +1,16 @@
 "use strict";
 
-const answers = [];
+let numberOfFilms = promt('Сколько фильмов вы уже посмотрели?');
 
-answers[0] = prompt('Как ваше имя?', '');
-answers[1] = prompt('Как ваше фамилия?', '');
-answers[2] = prompt('Сколько вам лет?', '');
+let personalMovieBD = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: {},
+    private: false,
+}
+
+let lastFilm = promt('Один из поледных фильмов?', '');
+let rating   = promt('На сколько оцените его?', '');
+
+console.log(personalMovieBD.movies.lastFilms = personalMovieBD.movies.rating);
